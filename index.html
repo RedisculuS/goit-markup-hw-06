@@ -8,7 +8,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/style-adaptive.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,28 +25,77 @@
           <a class="logo" href="./index.html"
             >Web<span class="webstudio">Studio</span></a
           >
-          <ul class="nav-title">
-            <li>
-              <a class="nav-list-el current" href="./index.html">Studio</a>
-            </li>
-            <li><a class="nav-list-el" href="" target="_self">Portfolio</a></li>
-            <li><a class="nav-list-el" href="" target="_self">Contacts</a></li>
-          </ul>
+          <button type="button" class="menu-button is-open">
+            <svg height="24" width="24">
+              <use
+                class="icon-menu"
+                href="./images/icons.svg#icon-burger-menu"
+              ></use>
+            </svg>
+          </button>
+          <div class="nav-title-container is-open">
+            <button type="button" class="icon-cross-box">
+              <svg class="nav-close-icon" height="8" width="8">
+                <use href="./images/icons.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <ul class="nav-title">
+              <li>
+                <a class="nav-list-el current" href="./index.html">Studio</a>
+              </li>
+              <li>
+                <a class="nav-list-el" href="" target="_self">Portfolio</a>
+              </li>
+              <li>
+                <a class="nav-list-el" href="" target="_self">Contacts</a>
+              </li>
+            </ul>
+            <address class="address">
+              <ul class="contacts">
+                <li>
+                  <a class="address-list-el" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="address-list-el" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="nav-icons is-open">
+              <li class="nav-icon-box">
+                <a href="" class="nav-social-href">
+                  <svg class="nav-icon" height="24" width="24">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-icon-box">
+                <a href="" class="nav-social-href">
+                  <svg class="nav-icon" height="24" width="24">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-icon-box">
+                <a href="" class="nav-social-href">
+                  <svg class="nav-icon" height="24" width="24">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-icon-box">
+                <a href="" class="nav-social-href">
+                  <svg class="nav-icon" height="24" width="24">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <address class="address">
-          <ul class="contacts">
-            <li>
-              <a class="address-list-el" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="address-list-el" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
       </div>
     </header>
 
@@ -120,7 +171,7 @@
       <section class="section-team section-info-container">
         <div class="container">
           <h2 class="section-team-headder">Our Team</h2>
-          <ul class="team-list">
+          <!-- <ul class="team-list">
             <li class="section-team-list-el">
               <img
                 src="./images/mark-guerrero.jpg"
@@ -289,7 +340,7 @@
                 </ul>
               </div>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </section>
 
@@ -297,7 +348,7 @@
       <section class="section-portfolio section-info-container">
         <div class="container">
           <h2 class="section-team-headder">Our Portfolio</h2>
-          <ul class="portfolio-list">
+          <!-- <ul class="portfolio-list">
             <li class="portfolio-list-el">
               <div class="portf-img-box">
                 <img
@@ -418,7 +469,7 @@
                 <p class="section-descr">Marketing</p>
               </div>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </section>
     </main>
@@ -493,11 +544,11 @@
     <!-- Modal -->
     <div class="modal is-open">
       <div class="modal-content">
-        <button type="button" class="icon-cross-box">
+        <!-- <button type="button" class="icon-cross-box">
           <svg class="modal-close-icon" height="8" width="8">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
-        </button>
+        </button> -->
 
         <p class="form-header">Leave your contacts and we will call you back</p>
         <form class="form-callback">
@@ -570,7 +621,7 @@
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a class="privacy-policy">Privacy Policy</a>
+              <a class="privacy-policy" href="">Privacy Policy</a>
             </label>
           </div>
 

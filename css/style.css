@@ -438,7 +438,7 @@ ul {
 }
 
 .footer-social {
-  margin-right: 80px;
+  margin-right: auto;
 }
 
 .footer-social-header {
@@ -558,7 +558,7 @@ ul {
 
 /* Modal */
 
-.modal {
+/* .modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -569,12 +569,14 @@ ul {
   opacity: 0;
   margin: 0;
   padding: 0;
+  visibility: hidden;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal.is-open {
   opacity: 1;
+  visibility: visible;
 }
 
 .modal-content {
@@ -587,13 +589,11 @@ ul {
   min-height: 584px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f,
     0px 2px 1px 0px #00000033;
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* padding: 24px; */
 }
 
 .icon-cross-box {
@@ -635,10 +635,6 @@ ul {
   fill: #ffffff;
 }
 
-.modal-box {
-  /* padding: 72px 24px 24px 24px; */
-}
-
 .form-header {
   font-size: 16px;
   font-weight: 500;
@@ -664,6 +660,9 @@ ul {
 }
 
 .input-form {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   height: 40px;
   border-radius: 4px;
   width: 100%;
@@ -689,7 +688,6 @@ ul {
 
 .input-form:focus,
 .input-form:active {
-  /* outline: none; */
   border-color: #4d5ae5;
 }
 
@@ -738,11 +736,10 @@ ul {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
 }
 
 .checkbox-box {
-  /* display: flex; */
-  /* gap: 8px; */
   margin-bottom: 24px;
 }
 
@@ -752,14 +749,16 @@ ul {
   fill: #f4f4fd;
 }
 
+.checkbox-box input[type='checkbox']:focus + label .checkbox-form {
+  border-color: #4d5ae5;
+}
+
 .checkbox-descr {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   text-align: left;
   color: #8e8f99;
-  /* display: inline;
-  width: 100%; */
 }
 
 .privacy-policy {
@@ -794,4 +793,42 @@ ul {
 
 .form-button:focus {
   background-color: #404bbf;
+} */
+
+@media (max-width: 1158px) {
+  /* .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  } */
+}
+
+@media (max-width: 768px) {
+  /* .container {
+    max-width: 100%;
+  }
+
+  .contacts {
+    display: block;
+  }
+
+  .icon-advan-box {
+    display: none;
+  }
+  .advantages-list {
+    flex-wrap: wrap;
+  }
+  .advantages-list .advan-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .team-list-el {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .team-list {
+    display: flex;
+    column-gap: 24px;
+    row-gap: 48px;
+    flex-wrap: wrap;
+  } */
 }
